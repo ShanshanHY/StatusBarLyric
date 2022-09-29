@@ -2,7 +2,7 @@ name: Android CI Dev
 
 on:
   push:
-    branches: [ Dev ]
+    branches: [ Dev-test ]
 
 
 jobs:
@@ -54,7 +54,7 @@ jobs:
         with:
           releaseDirectory: ./app/build/outputs/apk/release
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
-          alias: xiao_wine
+          alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_STORE_PASSWORD }}
 
@@ -65,7 +65,7 @@ jobs:
         with:
           releaseDirectory: ./app/build/outputs/apk/debug
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
-          alias: xiao_wine
+          alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_STORE_PASSWORD }}
 
@@ -76,7 +76,7 @@ jobs:
         with:
           releaseDirectory: ./app/build/outputs/bundle/release/
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
-          alias: xiao_wine
+          alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_STORE_PASSWORD }}
 
