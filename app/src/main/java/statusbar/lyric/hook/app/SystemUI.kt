@@ -189,7 +189,7 @@ class SystemUI : BaseHook() {
                         offLyric(LogMultiLang.timeOff)
                     }
                     texts = lyrics
-//                    text = lyrics
+//                     text = lyrics
                 }
             }
 
