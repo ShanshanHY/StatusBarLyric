@@ -13,7 +13,7 @@ android {
         minSdk = 26
         targetSdk = 32
         versionCode = 163
-        versionName = "5.4.0"
+        versionName = "5.4.0-fix_antiburn"
         aaptOptions.cruncherEnabled = false
         aaptOptions.useNewCruncher = false
         buildConfigField("String", "BUILD_TIME", "\"$buildTime\"")
