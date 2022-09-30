@@ -50,9 +50,9 @@ class LyricSwitchView(context: Context, private var hasMeizu: Boolean) : TextSwi
         if (hasMeizu) {
             lyricTextView.layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
             lyricTextView2.layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
-            addView(lyricTextView)
             addView(lyricTextView2)
-            viewArray.add(lyricTextView)
+            addView(lyricTextView2)
+            viewArray.add(lyricTextView2)
             viewArray.add(lyricTextView2)
         } else {
             autoMarqueeTextView.layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
