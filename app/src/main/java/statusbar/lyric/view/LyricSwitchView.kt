@@ -86,9 +86,9 @@ class LyricSwitchView(context: Context, private var hasMeizu: Boolean) : TextSwi
     }
 
     fun horizontalFadingEdge() {
-        viewArray.forEach { view -> view.setHorizontalFadingEdgeEnabled(true) }
-        viewArray.forEach { view -> view.setFadingEdgeLength(300) }
-        viewArray.forEach { view -> view.setrequiresFadingEdge="horizontal" }
+        viewArray.forEach { view -> view.isHorizontalFadingEdgeEnabled = true }
+        
+        viewArray.forEach { view -> view.setrequiresFadingEdge = "horizontal" }
 
     }
 
